@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  lovell:
+    build: 
+      context: .
+      target: dev
+    environment:
+      PORT: '1965'
+      TLS_KEY_FILE: '/app/local.key'
+      TLS_CERT_FILE: '/app/local.crt'
+      INDEX_FILE: '/app/index.gmi'
+    ports:
+      - 1965:1965
+    volumes:
+      - .:/app

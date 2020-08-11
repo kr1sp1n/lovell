@@ -1,0 +1,32 @@
+{
+  "name": "lovell",
+  "version": "0.0.1",
+  "description": "gemini server",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch index.gmi --watch src/*",
+    "lint": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kr1sp1n/lovell.git"
+  },
+  "keywords": [
+    "gemini",
+    "server"
+  ],
+  "author": "kr1sp1n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kr1sp1n/lovell/issues"
+  },
+  "homepage": "https://github.com/kr1sp1n/lovell#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4"
+  }
+}
